@@ -27,7 +27,7 @@ SITE_URL = "http://lucianolorenti.github.com/"
 BLOG_EMAIL = "lucianolorenti@gmail.com"
 BLOG_DESCRIPTION = "Luciano Lorenti Homepage"  # (translatable)
 
-GITHUB_SOURCE_BRANCH = 'src'
+GITHUB_SOURCE_BRANCH = 'site_src'
 GITHUB_DEPLOY_BRANCH = 'site'
 GITHUB_REMOTE_NAME = 'origin'
 GITHUB_COMMIT_SOURCE = True
