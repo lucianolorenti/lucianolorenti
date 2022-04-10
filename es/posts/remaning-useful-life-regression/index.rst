@@ -1,0 +1,10 @@
+.. title: Remaning useful life regression
+.. slug: remaning-useful-life-regression
+.. date: 2022-04-01 21:41:33 UTC+02:00
+.. tags: 
+.. category: 
+.. link: 
+.. description: 
+.. type: text
+
+Write your post here.
