@@ -6,65 +6,51 @@
     xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
-  <loc>http://lucianolorenti.github.com/</loc>
-  <lastmod>2022-04-01T19:41:00Z</lastmod>
+  <loc>http://lucianolorenti.github.com/lucianolorenti/</loc>
+  <lastmod>2022-04-11T21:05:00Z</lastmod>
  </url>
  <url>
-  <loc>http://lucianolorenti.github.com/2022/</loc>
-  <lastmod>2022-04-01T19:41:00Z</lastmod>
+  <loc>http://lucianolorenti.github.com/lucianolorenti/2022/</loc>
+  <lastmod>2022-04-11T21:05:00Z</lastmod>
  </url>
  <url>
-  <loc>http://lucianolorenti.github.com/archive.html</loc>
-  <lastmod>2022-04-10T09:53:00Z</lastmod>
+  <loc>http://lucianolorenti.github.com/lucianolorenti/about/</loc>
+  <lastmod>2022-04-11T21:05:00Z</lastmod>
  </url>
  <url>
-  <loc>http://lucianolorenti.github.com/categories/</loc>
-  <lastmod>2022-04-01T19:40:00Z</lastmod>
+  <loc>http://lucianolorenti.github.com/lucianolorenti/archive.html</loc>
+  <lastmod>2022-04-11T21:05:00Z</lastmod>
  </url>
  <url>
-  <loc>http://lucianolorenti.github.com/es/</loc>
-  <lastmod>2022-04-01T19:41:00Z</lastmod>
+  <loc>http://lucianolorenti.github.com/lucianolorenti/categories/</loc>
+  <lastmod>2022-04-11T21:05:00Z</lastmod>
  </url>
  <url>
-  <loc>http://lucianolorenti.github.com/es/2022/</loc>
-  <lastmod>2022-04-01T19:41:00Z</lastmod>
+  <loc>http://lucianolorenti.github.com/lucianolorenti/galleries/</loc>
+  <lastmod>2022-04-11T21:05:00Z</lastmod>
  </url>
  <url>
-  <loc>http://lucianolorenti.github.com/es/archive.html</loc>
-  <lastmod>2022-04-10T09:53:00Z</lastmod>
+  <loc>http://lucianolorenti.github.com/lucianolorenti/listings/</loc>
+  <lastmod>2022-04-11T21:05:00Z</lastmod>
  </url>
  <url>
-  <loc>http://lucianolorenti.github.com/es/categories/</loc>
-  <lastmod>2022-04-01T19:40:00Z</lastmod>
+  <loc>http://lucianolorenti.github.com/lucianolorenti/posts/</loc>
+  <lastmod>2022-04-11T21:05:00Z</lastmod>
  </url>
  <url>
-  <loc>http://lucianolorenti.github.com/es/galleries/</loc>
-  <lastmod>2022-04-01T19:40:00Z</lastmod>
+  <loc>http://lucianolorenti.github.com/lucianolorenti/posts/remaning-useful-life-regression/</loc>
+  <lastmod>2022-04-11T21:05:00Z</lastmod>
  </url>
  <url>
-  <loc>http://lucianolorenti.github.com/es/posts/remaning-useful-life-regression/</loc>
-  <lastmod>2022-04-01T19:41:00Z</lastmod>
-  <xhtml:link rel="alternate" hreflang="en" href="http://lucianolorenti.github.com/posts/remaning-useful-life-regression/" />
+  <loc>http://lucianolorenti.github.com/lucianolorenti/posts/unsupervised-image-segmentation/</loc>
+  <lastmod>2022-04-11T21:05:00Z</lastmod>
  </url>
  <url>
-  <loc>http://lucianolorenti.github.com/es/posts/unsupervised-image-segmentation/</loc>
-  <lastmod>2022-04-01T19:47:00Z</lastmod>
-  <xhtml:link rel="alternate" hreflang="en" href="http://lucianolorenti.github.com/posts/unsupervised-image-segmentation/" />
+  <loc>http://lucianolorenti.github.com/lucianolorenti/posts/yolo/</loc>
+  <lastmod>2022-04-11T21:05:00Z</lastmod>
  </url>
  <url>
-  <loc>http://lucianolorenti.github.com/galleries/</loc>
-  <lastmod>2022-04-01T19:40:00Z</lastmod>
- </url>
- <url>
-  <loc>http://lucianolorenti.github.com/listings/</loc>
-  <lastmod>2022-04-01T19:40:00Z</lastmod>
- </url>
- <url>
-  <loc>http://lucianolorenti.github.com/posts/remaning-useful-life-regression/</loc>
-  <lastmod>2022-04-01T19:41:00Z</lastmod>
- </url>
- <url>
-  <loc>http://lucianolorenti.github.com/posts/unsupervised-image-segmentation/</loc>
-  <lastmod>2022-04-01T19:47:00Z</lastmod>
+  <loc>http://lucianolorenti.github.com/lucianolorenti/resume/</loc>
+  <lastmod>2022-04-10T20:20:00Z</lastmod>
  </url>
 </urlset>
