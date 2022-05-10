@@ -20,7 +20,7 @@ BLOG_AUTHOR = "Luciano Lorenti"  # (translatable)
 BLOG_TITLE = "Luciano Lorenti"  # (translatable)
 # This is the main URL for your site. It will be used
 # in a prominent link. Don't forget the protocol (http/https)!
-SITE_URL = "http://lucianolorenti.github.com/"
+SITE_URL = "http://lucianolorenti.github.com/lucianolorenti/"
 # This is the URL where Nikola's output will be deployed.
 # If not set, defaults to SITE_URL
 # BASE_URL = "http://lucianolorenti.github.com/"
@@ -106,7 +106,6 @@ DEFAULT_LANG = "en"
 # the path will be used as a prefix for the generated pages location
 TRANSLATIONS = {
     DEFAULT_LANG: "",
-    "es": "./es",
 }
 
 # What will translated input files be named like?
@@ -146,16 +145,13 @@ TRANSLATIONS_PATTERN = '{path}.{lang}.{ext}'
 
 NAVIGATION_LINKS = {
     DEFAULT_LANG: (
+        ("/about/", "About"),
+        ("/resume/", "Resume"),
         ("/archive.html", "Archive"),
         ("/categories/", "Tags"),
         ("/rss.xml", "RSS feed"),
     ),
 
-    "es": (
-        ("/es/archive.html", "Archivo"),
-        ("/es/categories/", "Etiquetas"),
-        ("/es/rss.xml", "Canal RSS"),
-    ),
 }
 
 # Alternative navigation links. Works the same way NAVIGATION_LINKS does,
@@ -166,7 +162,7 @@ NAVIGATION_ALT_LINKS = {
 }
 
 # Name of the theme to use.
-THEME = "bootblog4"
+THEME = "lolo"
 
 # A theme color. In default themes, it might be displayed by some browsers as
 # the browser UI color (eg. Chrome on Android). Other themes might also use it
@@ -250,12 +246,18 @@ POSTS = (
     ("posts/*.md", "posts", "post.tmpl"),
     ("posts/*.txt", "posts", "post.tmpl"),
     ("posts/*.html", "posts", "post.tmpl"),
+<<<<<<< HEAD
+    
+=======
+    ("posts/*.ipynb", "blog", "post.tmpl")
+>>>>>>> site_src
 )
 PAGES = (
-    ("pages/*.rst", "pages", "page.tmpl"),
-    ("pages/*.md", "pages", "page.tmpl"),
-    ("pages/*.txt", "pages", "page.tmpl"),
-    ("pages/*.html", "pages", "page.tmpl"),
+    ("pages/*.rst", "", "page.tmpl"),
+    ("pages/*.md", "", "page.tmpl"),
+    ("pages/*.txt", "", "page.tmpl"),
+    ("pages/*.html", "", "page.tmpl"),
+    
 )
 
 
@@ -338,6 +340,7 @@ COMPILERS = {
     # but is disabled by default as it would conflict
     # with many of the others.
     # "pandoc": ['.rst', '.md', '.txt'],
+    
 }
 
 # Enable reST directives that insert the contents of external files such
@@ -590,7 +593,7 @@ HIDDEN_AUTHORS = ['Guest']
 # Final location for the main blog page and sibling paginated pages is
 # output / TRANSLATION[lang] / INDEX_PATH / index-*.html
 # (translatable)
-# INDEX_PATH = ""
+INDEX_PATH = "posts"
 
 # Optional HTML that displayed on “main” blog index.html files.
 # May be used for a greeting. (translatable)
@@ -1249,7 +1252,7 @@ MARKDOWN_EXTENSIONS = ['markdown.extensions.fenced_code', 'markdown.extensions.c
 # Bootstrap is served from BootstrapCDN (provided by MaxCDN)
 # Set this to False if you want to host your site without requiring access to
 # external resources.
-# USE_CDN = False
+USE_CDN = False
 
 # Check for USE_CDN compatibility.
 # If you are using custom themes, have configured the CSS properly and are
@@ -1342,7 +1345,7 @@ MARKDOWN_EXTENSIONS = ['markdown.extensions.fenced_code', 'markdown.extensions.c
 # Bundle JS and CSS into single files to make site loading faster in a HTTP/1.1
 # environment but is not recommended for HTTP/2.0 when caching is used.
 # Defaults to True.
-# USE_BUNDLES = True
+USE_BUNDLES = True
 
 # Plugins you don't want to use. Be careful :-)
 # DISABLED_PLUGINS = ["render_galleries"]
@@ -1408,3 +1411,66 @@ GLOBAL_CONTEXT = {}
 # GLOBAL_CONTEXT as parameter when the template is about to be
 # rendered
 GLOBAL_CONTEXT_FILLER = []
+
+
+# Determines how the formulae are rendered. Possibilities:
+#  - "latex_formula_image_renderer": renders formulae as graphics and includes them.
+#  - "latex_formula_mathjax": inserts MathJax code.
+LATEX_FORMULA_RENDERER = "latex_formula_image_renderer"
+
+# When "latex_formula_image_renderer" is selected as the formula renderer,
+# the formulae colors and scale can be set here:
+#
+# The color must be given as an RGB triple with components in range [0, 1].
+# Here, (0, 0, 0) is black and (1, 1, 1) is white.
+LATEX_FORMULA_COLOR = (0., 0., 0.)
+#
+# The formula scale determines the effective size of the formulae.
+# Check what looks good with your theme's main font.
+LATEX_FORMULA_SCALE = 1.25
+#
+# The engine determines the TeX engine used. Must be one of "latex", "luatex" and "xetex".
+# Note that "luatex" does not support pstricks formulae.
+LATEX_FORMULA_ENGINE = "latex"
+
+
+# The folder relative to OUTPUT_FOLDER in which the rendered formulae are stored.
+# Defaults to /formula/.
+LATEX_FORMULA_FOLDER = "formula"
+
+# Whether to store the rendered formulae as images or to insert them with data URIs.
+# Warning: data URIs can seriously blow up the generated HTML, especially if you
+# use may formulae or repeatingly the same one!
+LATEX_FORMULA_AS_DATAURI = False
+
+# The output format used for the images. Possible values:
+#   * "png" for PNG images with transparency;
+#   * "svg" for SVG vector graphics;
+#   * "svgz" for SVG vector graphics compressed with gzip.
+# Note that depending on your web server's configuration, you might experience
+# problems with .svgz files as the web server might treat them similar to .svg.gz
+# files and deliver them claiming that they are .svg files.
+LATEX_FORMULA_OUTPUT_FORMAT = 'png'
+
+# Allows to include packages and define things in the preamble of the .tex files
+# used to render the formulae. When generating a temporary .tex file, the plugin
+# looks for the contents of the following keys:
+#   * "": will always be included;
+#   * "tikz": will be included when formula_type is ("tikzpicture", ...);
+#   * "pstricks": will be included when formula_type is ("pstricks", ...);
+#   * "xy": will be included if the formula contains "\xymatrix";
+#   * "pdflatex": will be included if the .tex file is processed by pdflatex
+#     to convert it to a .pdf file;
+#   * "latex": will be included if the .tex file is processed by latex to convert
+#     it to a .dvi file.
+# The default is {}, which means no preamble additions. The following example
+# shows how to define some macros for all formulae:
+LATEX_FORMULA_ADDITIONAL_PREAMBLE = {
+    "": r"""
+\usepackage{amssymb}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\C}{\mathbb{C}}"""
+}

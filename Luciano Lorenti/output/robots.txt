@@ -1,4 +1,4 @@
-Sitemap: http://lucianolorenti.github.com/sitemapindex.xml
+Sitemap: http://lucianolorenti.github.com/lucianolorenti/sitemapindex.xml
 
 User-Agent: *
 Host: lucianolorenti.github.com
