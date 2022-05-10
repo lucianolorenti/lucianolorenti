@@ -246,7 +246,11 @@ POSTS = (
     ("posts/*.md", "posts", "post.tmpl"),
     ("posts/*.txt", "posts", "post.tmpl"),
     ("posts/*.html", "posts", "post.tmpl"),
+<<<<<<< HEAD
     
+=======
+    ("posts/*.ipynb", "blog", "post.tmpl")
+>>>>>>> site_src
 )
 PAGES = (
     ("pages/*.rst", "", "page.tmpl"),

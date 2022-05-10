@@ -1,83 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<<<<<<< HEAD
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Luciano Lorenti</title><link>http://lucianolorenti.github.com/lucianolorenti/</link><description>Luciano Lorenti Homepage</description><atom:link href="http://lucianolorenti.github.com/lucianolorenti/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2022 &lt;a href="mailto:lucianolorenti@gmail.com"&gt;Luciano Lorenti&lt;/a&gt; </copyright><lastBuildDate>Sat, 23 Apr 2022 08:49:00 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>YOLO</title><link>http://lucianolorenti.github.com/lucianolorenti/posts/yolo/</link><dc:creator>Luciano Lorenti</dc:creator><description>&lt;div class="contents topic" id="table-of-contents"&gt;
-&lt;p class="topic-title"&gt;Table of Contents&lt;/p&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;&lt;p&gt;&lt;a class="reference internal" href="http://lucianolorenti.github.com/lucianolorenti/posts/yolo/#datasets" id="id1"&gt;Datasets&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;a class="reference internal" href="http://lucianolorenti.github.com/lucianolorenti/posts/yolo/#voc2007" id="id2"&gt;VOC2007&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;a class="reference internal" href="http://lucianolorenti.github.com/lucianolorenti/posts/yolo/#introduction" id="id3"&gt;Introduction&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a class="reference internal" href="http://lucianolorenti.github.com/lucianolorenti/posts/yolo/#yolo-v1" id="id4"&gt;YOLO V1&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;a class="reference internal" href="http://lucianolorenti.github.com/lucianolorenti/posts/yolo/#pretraining" id="id5"&gt;Pretraining&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a class="reference internal" href="http://lucianolorenti.github.com/lucianolorenti/posts/yolo/#loss" id="id6"&gt;Loss&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a class="reference internal" href="http://lucianolorenti.github.com/lucianolorenti/posts/yolo/#yolo-v2" id="id7"&gt;YOLO V2&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;a class="reference internal" href="http://lucianolorenti.github.com/lucianolorenti/posts/yolo/#anchors" id="id8"&gt;Anchors&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a class="reference internal" href="http://lucianolorenti.github.com/lucianolorenti/posts/yolo/#yolo-v3" id="id9"&gt;YOLO V3&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;p&gt;The year was 2015. We were the adventeures of Michael, Trevor y Franklin,  Adele was releasing 25 and movie reference.
-A group of researchers thought about a way to segemnt .&lt;/p&gt;
-&lt;p&gt;This is a supervised problem&lt;/p&gt;
-&lt;div class="section" id="datasets"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="http://lucianolorenti.github.com/lucianolorenti/posts/yolo/#id1"&gt;Datasets&lt;/a&gt;&lt;/h2&gt;
-&lt;div class="section" id="voc2007"&gt;
-&lt;h3&gt;&lt;a class="toc-backref" href="http://lucianolorenti.github.com/lucianolorenti/posts/yolo/#id2"&gt;VOC2007&lt;/a&gt;&lt;/h3&gt;
-&lt;div class="section" id="introduction"&gt;
-&lt;h4&gt;&lt;a class="toc-backref" href="http://lucianolorenti.github.com/lucianolorenti/posts/yolo/#id3"&gt;Introduction&lt;/a&gt;&lt;/h4&gt;
-&lt;p&gt;The PASCAL Visual Object Classes Challenge 2007. The goal of this challenge is to recognize objects from a number of visual object classes in realistic scenes (i.e. not pre-segmented objects). It is fundamentally a supervised learning learning problem in that a training set of labelled images is provided. The twenty object classes that have been selected are:&lt;/p&gt;
-&lt;p&gt;Person: person
-Animal: bird, cat, cow, dog, horse, sheep
-Vehicle: aeroplane, bicycle, boat, bus, car, motorbike, train
-Indoor: bottle, chair, dining table, potted plant, sofa, tv/monitor&lt;/p&gt;
-&lt;p&gt;One of the objectives of the challenges was to  Predicting the bounding box and label of each part of a person (head, hands, feet)&lt;/p&gt;
-&lt;p&gt;The training data provided consists of a set of images; each image has an annotation file giving a bounding box and object class label for each object in one of the twenty classes present in the image. Note that multiple objects from multiple classes may be present in the same image.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="section" id="yolo-v1"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="http://lucianolorenti.github.com/lucianolorenti/posts/yolo/#id4"&gt;YOLO V1&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;The first version of YOLO combined convolutional layers and a fully connected layers with some dropout in the middle.&lt;/p&gt;
-&lt;div class="section" id="pretraining"&gt;
-&lt;h3&gt;&lt;a class="toc-backref" href="http://lucianolorenti.github.com/lucianolorenti/posts/yolo/#id5"&gt;Pretraining&lt;/a&gt;&lt;/h3&gt;
-&lt;/div&gt;
-&lt;div class="section" id="loss"&gt;
-&lt;h3&gt;&lt;a class="toc-backref" href="http://lucianolorenti.github.com/lucianolorenti/posts/yolo/#id6"&gt;Loss&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;YOLO predicts multiple bounding boxes per grid cell. At training time we only want one bounding box predictor to be responsible for each object. We assign one predictor
-to be “responsible” for predicting an object based on which prediction has the highest current IOU with the ground truth. This leads to specialization between the bounding box
-predictors. Each predictor gets better at predicting certain sizes, aspect ratios, or classes of object, improving overall recall.
-IOU.&lt;/p&gt;
-&lt;p&gt;Note that the loss function only penalizes classification error if an object is present in that grid cell (hence the conditional class probability discussed earlier). It also only penalizes bounding box coordinate error if that predictor is
-“responsible” for the ground truth box (i.e. has the highest IOU of any predictor in that grid cell).&lt;/p&gt;
-&lt;div class="math"&gt;
-\begin{equation*}
-\lambda_{ord} \sum\limits_{i=0}^{S^2} \sum\limits_{j=0}^{B}  1_{ij}^{obj} \left[  (x_i - \hat{x}_i )^ 2 + (y_i - \hat{y}_i )^ 2  \right]
-+ \lambda_{ord} \sum\limits_{i=0}^{S^2} \sum\limits_{j=0}^{B} 1_{ij}^{obj}
-\end{equation*}
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="section" id="yolo-v2"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="http://lucianolorenti.github.com/lucianolorenti/posts/yolo/#id7"&gt;YOLO V2&lt;/a&gt;&lt;/h2&gt;
-&lt;div class="section" id="anchors"&gt;
-&lt;h3&gt;&lt;a class="toc-backref" href="http://lucianolorenti.github.com/lucianolorenti/posts/yolo/#id8"&gt;Anchors&lt;/a&gt;&lt;/h3&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="section" id="yolo-v3"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="http://lucianolorenti.github.com/lucianolorenti/posts/yolo/#id9"&gt;YOLO V3&lt;/a&gt;&lt;/h2&gt;
-&lt;/div&gt;</description><guid>http://lucianolorenti.github.com/lucianolorenti/posts/yolo/</guid><pubDate>Mon, 11 Apr 2022 18:47:23 GMT</pubDate></item><item><title>Unsupervised Image Segmentation</title><link>http://lucianolorenti.github.com/lucianolorenti/posts/unsupervised-image-segmentation/</link><dc:creator>Luciano Lorenti</dc:creator><description>&lt;p&gt;Write your post here.&lt;/p&gt;</description><guid>http://lucianolorenti.github.com/lucianolorenti/posts/unsupervised-image-segmentation/</guid><pubDate>Fri, 01 Apr 2022 19:47:42 GMT</pubDate></item><item><title>Remaning useful life regression</title><link>http://lucianolorenti.github.com/lucianolorenti/posts/remaning-useful-life-regression/</link><dc:creator>Luciano Lorenti</dc:creator><description>&lt;p&gt;Write your post here.&lt;/p&gt;</description><guid>http://lucianolorenti.github.com/lucianolorenti/posts/remaning-useful-life-regression/</guid><pubDate>Fri, 01 Apr 2022 19:41:33 GMT</pubDate></item></channel></rss>
-=======
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Luciano Lorenti</title><link>http://lucianolorenti.github.com/</link><description>Luciano Lorenti Homepage</description><atom:link href="http://lucianolorenti.github.com/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2022 &lt;a href="mailto:lucianolorenti@gmail.com"&gt;Luciano Lorenti&lt;/a&gt; </copyright><lastBuildDate>Mon, 02 May 2022 12:23:19 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Feature selection for neural networks</title><link>http://lucianolorenti.github.com/blog/feature-selection-for-neural-networks/</link><dc:creator>Luciano Lorenti</dc:creator><description>&lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Luciano Lorenti</title><link>http://lucianolorenti.github.com/</link><description>Luciano Lorenti Homepage</description><atom:link href="http://lucianolorenti.github.com/es/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>es</language><copyright>Contents © 2022 &lt;a href="mailto:lucianolorenti@gmail.com"&gt;Luciano Lorenti&lt;/a&gt; </copyright><lastBuildDate>Mon, 02 May 2022 12:23:19 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Feature selection for neural networks</title><link>http://lucianolorenti.github.com/es/blog/feature-selection-for-neural-networks/</link><dc:creator>Luciano Lorenti</dc:creator><description>&lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;&lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
 &lt;p&gt;Feature selection is an essential task in machine learning. Usually al&lt;/p&gt;
@@ -108,7 +30,7 @@ IOU.&lt;/p&gt;
 &lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;&lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;h2 id="Initial-dataset"&gt;Initial dataset&lt;a class="anchor-link" href="http://lucianolorenti.github.com/blog/feature-selection-for-neural-networks/#Initial-dataset"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id="Initial-dataset"&gt;Initial dataset&lt;a class="anchor-link" href="http://lucianolorenti.github.com/es/blog/feature-selection-for-neural-networks/#Initial-dataset"&gt;¶&lt;/a&gt;&lt;/h2&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -211,7 +133,7 @@ To enable them in other operations, rebuild TensorFlow with the appropriate comp
 &lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;&lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;h2 id="Model"&gt;Model&lt;a class="anchor-link" href="http://lucianolorenti.github.com/blog/feature-selection-for-neural-networks/#Model"&gt;¶&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;We create ur model as a simple convolutional layer&lt;/p&gt;
+&lt;h2 id="Model"&gt;Model&lt;a class="anchor-link" href="http://lucianolorenti.github.com/es/blog/feature-selection-for-neural-networks/#Model"&gt;¶&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;We create ur model as a simple convolutional layer&lt;/p&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
@@ -239,7 +161,7 @@ To enable them in other operations, rebuild TensorFlow with the appropriate comp
 &lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;&lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;h2 id="LASSO-NET"&gt;LASSO NET&lt;a class="anchor-link" href="http://lucianolorenti.github.com/blog/feature-selection-for-neural-networks/#LASSO-NET"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id="LASSO-NET"&gt;LASSO NET&lt;a class="anchor-link" href="http://lucianolorenti.github.com/es/blog/feature-selection-for-neural-networks/#LASSO-NET"&gt;¶&lt;/a&gt;&lt;/h2&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -351,7 +273,7 @@ To enable them in other operations, rebuild TensorFlow with the appropriate comp
 &lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;&lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;h3 id="Proximal-update"&gt;Proximal update&lt;a class="anchor-link" href="http://lucianolorenti.github.com/blog/feature-selection-for-neural-networks/#Proximal-update"&gt;¶&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id="Proximal-update"&gt;Proximal update&lt;a class="anchor-link" href="http://lucianolorenti.github.com/es/blog/feature-selection-for-neural-networks/#Proximal-update"&gt;¶&lt;/a&gt;&lt;/h3&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -405,5 +327,4 @@ To enable them in other operations, rebuild TensorFlow with the appropriate comp
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;/div&gt;</description><guid>http://lucianolorenti.github.com/blog/feature-selection-for-neural-networks/</guid><pubDate>Mon, 02 May 2022 11:58:06 GMT</pubDate></item><item><title>Unsupervised Image Segmentation</title><link>http://lucianolorenti.github.com/posts/unsupervised-image-segmentation/</link><dc:creator>Luciano Lorenti</dc:creator><description>&lt;p&gt;Write your post here.&lt;/p&gt;</description><guid>http://lucianolorenti.github.com/posts/unsupervised-image-segmentation/</guid><pubDate>Fri, 01 Apr 2022 19:47:42 GMT</pubDate></item><item><title>Remaning useful life regression</title><link>http://lucianolorenti.github.com/posts/remaning-useful-life-regression/</link><dc:creator>Luciano Lorenti</dc:creator><description>&lt;p&gt;Write your post here.&lt;/p&gt;</description><guid>http://lucianolorenti.github.com/posts/remaning-useful-life-regression/</guid><pubDate>Fri, 01 Apr 2022 19:41:33 GMT</pubDate></item></channel></rss>
->>>>>>> site_src
+&lt;/div&gt;</description><guid>http://lucianolorenti.github.com/es/blog/feature-selection-for-neural-networks/</guid><pubDate>Mon, 02 May 2022 11:58:06 GMT</pubDate></item><item><title>Unsupervised Image Segmentation</title><link>http://lucianolorenti.github.com/es/posts/unsupervised-image-segmentation/</link><dc:creator>Luciano Lorenti</dc:creator><description>&lt;p&gt;Write your post here.&lt;/p&gt;</description><guid>http://lucianolorenti.github.com/es/posts/unsupervised-image-segmentation/</guid><pubDate>Fri, 01 Apr 2022 19:47:42 GMT</pubDate></item><item><title>Remaning useful life regression</title><link>http://lucianolorenti.github.com/es/posts/remaning-useful-life-regression/</link><dc:creator>Luciano Lorenti</dc:creator><description>&lt;p&gt;Write your post here.&lt;/p&gt;</description><guid>http://lucianolorenti.github.com/es/posts/remaning-useful-life-regression/</guid><pubDate>Fri, 01 Apr 2022 19:41:33 GMT</pubDate></item></channel></rss>

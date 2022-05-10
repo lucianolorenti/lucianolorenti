@@ -6,6 +6,7 @@
     xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
+<<<<<<< HEAD
   <loc>http://lucianolorenti.github.com/lucianolorenti/</loc>
   <lastmod>2022-04-11T21:05:00Z</lastmod>
  </url>
@@ -52,5 +53,76 @@
  <url>
   <loc>http://lucianolorenti.github.com/lucianolorenti/resume/</loc>
   <lastmod>2022-04-10T20:20:00Z</lastmod>
+=======
+  <loc>http://lucianolorenti.github.com/</loc>
+  <lastmod>2022-05-02T12:23:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lucianolorenti.github.com/2022/</loc>
+  <lastmod>2022-05-02T11:56:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lucianolorenti.github.com/archive.html</loc>
+  <lastmod>2022-05-02T12:23:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lucianolorenti.github.com/blog/feature-selection-for-neural-networks/</loc>
+  <lastmod>2022-05-02T12:23:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lucianolorenti.github.com/categories/</loc>
+  <lastmod>2022-05-02T11:56:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lucianolorenti.github.com/es/</loc>
+  <lastmod>2022-05-02T12:23:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lucianolorenti.github.com/es/2022/</loc>
+  <lastmod>2022-05-02T11:56:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lucianolorenti.github.com/es/archive.html</loc>
+  <lastmod>2022-05-02T12:23:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lucianolorenti.github.com/es/blog/feature-selection-for-neural-networks/</loc>
+  <lastmod>2022-05-02T12:23:00Z</lastmod>
+  <xhtml:link rel="alternate" hreflang="en" href="http://lucianolorenti.github.com/blog/feature-selection-for-neural-networks/" />
+ </url>
+ <url>
+  <loc>http://lucianolorenti.github.com/es/categories/</loc>
+  <lastmod>2022-05-02T11:56:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lucianolorenti.github.com/es/galleries/</loc>
+  <lastmod>2022-05-02T11:56:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lucianolorenti.github.com/es/posts/remaning-useful-life-regression/</loc>
+  <lastmod>2022-05-02T11:56:00Z</lastmod>
+  <xhtml:link rel="alternate" hreflang="en" href="http://lucianolorenti.github.com/posts/remaning-useful-life-regression/" />
+ </url>
+ <url>
+  <loc>http://lucianolorenti.github.com/es/posts/unsupervised-image-segmentation/</loc>
+  <lastmod>2022-05-02T11:56:00Z</lastmod>
+  <xhtml:link rel="alternate" hreflang="en" href="http://lucianolorenti.github.com/posts/unsupervised-image-segmentation/" />
+ </url>
+ <url>
+  <loc>http://lucianolorenti.github.com/galleries/</loc>
+  <lastmod>2022-05-02T11:56:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lucianolorenti.github.com/listings/</loc>
+  <lastmod>2022-05-02T11:56:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lucianolorenti.github.com/posts/remaning-useful-life-regression/</loc>
+  <lastmod>2022-05-02T11:56:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lucianolorenti.github.com/posts/unsupervised-image-segmentation/</loc>
+  <lastmod>2022-05-02T11:56:00Z</lastmod>
+>>>>>>> site_src
  </url>
 </urlset>

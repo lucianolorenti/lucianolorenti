@@ -6,6 +6,7 @@
     xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <sitemap>
+<<<<<<< HEAD
   <loc>http://lucianolorenti.github.com/lucianolorenti/galleries/rss.xml</loc>
   <lastmod>2022-04-11T21:05:00Z</lastmod>
  </sitemap>
@@ -16,5 +17,25 @@
  <sitemap>
   <loc>http://lucianolorenti.github.com/lucianolorenti/sitemap.xml</loc>
   <lastmod>2022-04-11T21:05:00Z</lastmod>
+=======
+  <loc>http://lucianolorenti.github.com/es/galleries/rss.xml</loc>
+  <lastmod>2022-05-02T11:56:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://lucianolorenti.github.com/es/rss.xml</loc>
+  <lastmod>2022-05-02T12:23:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://lucianolorenti.github.com/galleries/rss.xml</loc>
+  <lastmod>2022-05-02T11:56:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://lucianolorenti.github.com/rss.xml</loc>
+  <lastmod>2022-05-02T12:23:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://lucianolorenti.github.com/sitemap.xml</loc>
+  <lastmod>2022-05-02T12:23:00Z</lastmod>
+>>>>>>> site_src
  </sitemap>
 </sitemapindex>
