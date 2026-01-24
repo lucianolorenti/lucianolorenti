@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Luciano Lorenti - YouTube" />
+  <meta name="author" content="Luciano Lorenti" />
+  <title>Luciano Lorenti — YouTube</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>LUCIANO LORENTI</h1>
+      <div class="subtitle">Lead Data Scientist & Full-Stack AI Engineer</div>
+      <div class="hero-divider"></div>
+      <div class="contact-info">
+        <div class="contact-item">
+          <span>Location:</span>
+          <span>Berlin, Germany</span>
+        </div>
+        <div class="contact-item">
+          <span>Email:</span>
+          <a href="#" data-email data-user="lucianolorenti" data-domain="gmail" data-tld="com">lucianolorenti [at] gmail [dot] com</a>
+        </div>
+        <div class="contact-item">
+          <span>Scholar:</span>
+          <a href="https://scholar.google.com/citations?hl=es&user=OOgWNzsAAAAJ&view_op=list_works&sortby=pubdate" target="_blank" rel="noopener">Google Scholar</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <nav>
+    <div class="nav-container">
+      <a class="nav-brand" href="index.html">
+        <span class="nav-brand-name">Luciano Lorenti</span>
+        <span class="nav-brand-role">Lead Data Scientist & Full-Stack AI Engineer</span>
+      </a>
+      <div class="nav-links">
+        <a href="index.html#about">About</a>
+        <a href="index.html#technologies">Technologies</a>
+        <a href="index.html#experience">Experience</a>
+        <a href="index.html#education">Education</a>
+        <a href="index.html#languages">Languages</a>
+        <a href="research.html">Research</a>
+        <a href="projects.html">Projects</a>
+        <a href="youtube.html" class="active">YouTube</a>
+        <div class="theme-toggle" onclick="toggleTheme()" title="Toggle dark mode">🌓</div>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="intro">
+      <h2>Intro</h2>
+      <p>
+        Curated ML experiments, tutorials, and project deep-dives. Subscribe to stay up to date with new videos.
+        Channel: <a href="https://www.youtube.com/@lolo.lorenti" target="_blank" rel="noopener">@lolo.lorenti</a>.
+      </p>
+      <div class="video-status" id="video-status">Loading videos…</div>
+    </section>
+
+    <div class="video-grid" id="video-grid" aria-live="polite"></div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Luciano Lorenti. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function toggleTheme() {
+      document.body.classList.toggle('dark-mode');
+      const theme = document.body.classList.contains('dark-mode') ? 'dark' : 'light';
+      localStorage.setItem('theme', theme);
+    }
+
+    if (localStorage.getItem('theme') === 'dark') {
+      document.body.classList.add('dark-mode');
+    }
+
+    const emailLinks = document.querySelectorAll('[data-email]');
+    emailLinks.forEach((emailLink) => {
+      const user = emailLink.getAttribute('data-user');
+      const domain = emailLink.getAttribute('data-domain');
+      const tld = emailLink.getAttribute('data-tld');
+      const address = `${user}@${domain}.${tld}`;
+      emailLink.setAttribute('aria-label', address);
+      emailLink.addEventListener('click', (event) => {
+        event.preventDefault();
+        window.location.href = `mailto:${address}`;
+      });
+    });
+
+    async function loadYouTubeVideos() {
+      const status = document.getElementById('video-status');
+      const grid = document.getElementById('video-grid');
+      const channelUrl = 'https://www.youtube.com/@lolo.lorenti';
+      const proxyUrl = `https://r.jina.ai/${channelUrl}`;
+
+      try {
+        const response = await fetch(proxyUrl);
+        if (!response.ok) throw new Error('Failed to fetch channel page.');
+        const text = await response.text();
+
+        const videoRegex = /### \[(.+?)\]\(https:\/\/www\.youtube\.com\/watch\?v=([A-Za-z0-9_-]{11})/g;
+        const videos = [];
+        const seen = new Set();
+        let match;
+
+        while ((match = videoRegex.exec(text)) !== null) {
+          const title = match[1].trim();
+          const id = match[2];
+          if (!seen.has(id)) {
+            seen.add(id);
+            videos.push({ id, title });
+          }
+        }
+
+        if (videos.length === 0) {
+          status.textContent = 'No videos found.';
+          return;
+        }
+
+        status.textContent = `Showing ${Math.min(videos.length, 12)} latest videos.`;
+        const limited = videos.slice(0, 12);
+
+        grid.innerHTML = limited.map(video => {
+          const thumb = `https://i.ytimg.com/vi/${video.id}/hqdefault.jpg`;
+          const url = `https://www.youtube.com/watch?v=${video.id}`;
+          return `
+            <a class="video-card" href="${url}" target="_blank" rel="noopener">
+              <img class="video-thumb" src="${thumb}" alt="${video.title}" loading="lazy" />
+              <div class="video-body">
+                <h3>${video.title}</h3>
+                <span>Watch on YouTube</span>
+              </div>
+            </a>
+          `;
+        }).join('');
+      } catch (error) {
+        status.textContent = 'Unable to load videos automatically. You can still visit the channel directly.';
+      }
+    }
+
+    loadYouTubeVideos();
+  </script>
+</body>
+</html>
