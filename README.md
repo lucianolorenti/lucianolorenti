@@ -1,5 +1,6 @@
 # Hi there, I'm Luciano Lorenti 👋
 
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/luciano-lorenti/)
 [![Google Scholar](https://img.shields.io/badge/Google%20Scholar-4285F4?style=flat&logo=google-scholar&logoColor=white)](https://scholar.google.com/citations?hl=es&user=OOgWNzsAAAAJ&view_op=list_works&sortby=pubdate)
 [![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=flat&logo=youtube&logoColor=white)](https://www.youtube.com/@lolo.lorenti)
 [![Email](https://img.shields.io/badge/Email-D14836?style=flat&logo=gmail&logoColor=white)](mailto:lucianolorenti@gmail.com)
@@ -12,7 +13,7 @@ I build end-to-end AI systems that solve real-world problems—from agentic LLM 
 
 ## 🚀 What I Do
 
-- **Agentic AI Systems**: Designing and deploying LLM-powered agents with complex reasoning, multi-step workflows, and real-time decision-making (LangGraph, Azure AI, OpenAI)
+- **Agentic AI Systems**: Designing and deploying LLM-powered agents with complex reasoning, multi-step workflows, and real-time decision-making (DSPy, LangGraph, LangChain, LlamaIndex, Azure AI, OpenAI)
 - **Predictive Analytics**: RUL estimation, anomaly detection, and time-series forecasting for manufacturing and aerospace
 - **Optimization & Operations Research**: Meta-heuristics, gradient-free optimization, warehouse management, and production scheduling
 - **Computer Vision**: Industrial defect detection, quality control, and automated visual inspection
@@ -27,7 +28,7 @@ I build end-to-end AI systems that solve real-world problems—from agentic LLM 
 
 **ML/DL Frameworks**: PyTorch, TensorFlow, scikit-learn, XGBoost, LightGBM
 
-**AI & LLMs**: LangGraph, LangChain, OpenAI API, Azure AI, Hugging Face Transformers
+**AI & LLMs**: DSPy, LangGraph, LangChain, LlamaIndex, OpenAI API, Azure AI, Hugging Face Transformers
 
 **MLOps**: MLflow, DVC, Weights & Biases, Kubeflow, Docker, Kubernetes
 
@@ -47,8 +48,8 @@ I build end-to-end AI systems that solve real-world problems—from agentic LLM 
 - Research & Development in **manufacturing optimization**, **healthcare analytics**, and **aerospace predictive maintenance**
 
 **Academic Background**:
-- Advanced studies at [**Università degli Studi di Padova**](https://www.unipd.it/) 🇮🇹
-- Engineering degree from [**Universidad Nacional de La Plata**](https://unlp.edu.ar/) 🇦🇷
+- **Master's Degree in Data Science** — [Università degli Studi di Padova](https://www.unipd.it/) 🇮🇹
+- **Master's Degree in Computer Science** — [Universidad Nacional de La Plata](https://unlp.edu.ar/) 🇦🇷
 
 ---
 
@@ -107,6 +108,7 @@ Check out my full publication list on [Google Scholar](https://scholar.google.co
 - **Spanish** — Native
 - **English** — Fluent
 - **Italian** — Fluent
+- **German** — B1
 
 ---
 
@@ -114,6 +116,7 @@ Check out my full publication list on [Google Scholar](https://scholar.google.co
 
 I'm always open to collaborating on interesting projects, discussing research ideas, or exploring opportunities in AI/ML engineering.
 
+- **LinkedIn**: [luciano-lorenti](https://www.linkedin.com/in/luciano-lorenti/)
 - **Email**: [lucianolorenti@gmail.com](mailto:lucianolorenti@gmail.com)
 - **Google Scholar**: [View Publications](https://scholar.google.com/citations?hl=es&user=OOgWNzsAAAAJ&view_op=list_works&sortby=pubdate)
 - **YouTube**: [@lolo.lorenti](https://www.youtube.com/@lolo.lorenti)
